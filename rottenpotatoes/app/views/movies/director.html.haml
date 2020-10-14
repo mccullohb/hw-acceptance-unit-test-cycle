@@ -1,0 +1,13 @@
+-#  This file is app/views/movies/director.html.haml
+%h2 Movies with same director
+
+-# Taken from index.html.haml
+
+%table#movies.table.table-striped.col-md-12
+  %thead
+    %tr
+      %th Movie
+  %tbody
+    - @movies.each do |movie|
+      %tr
+        %td= movie.title
